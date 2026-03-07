@@ -1,84 +1,24 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excelsis English 劍橋卓越 | 用愛啟發卓越</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root { --primary-blue: #003366; --accent-gold: #D4AF37; --warm-bg: #FDFBF7; }
-        body { font-family: 'Noto Sans TC', sans-serif; margin: 0; background: var(--warm-bg); line-height: 1.6; }
-        
-        /* Navigation */
-        header { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
-        .logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--primary-blue); font-weight: bold; }
-        nav a { margin-left: 20px; text-decoration: none; color: #333; font-weight: 500; transition: 0.3s; }
-        nav a:hover { color: var(--accent-gold); }
-
-        /* Hero */
-        .hero { height: 60vh; background: linear-gradient(rgba(0,51,102,0.6), rgba(0,51,102,0.6)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 0 20px; }
-        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-
-        /* Philosophy Section */
-        .philosophy { padding: 80px 10%; text-align: center; background: white; }
-        .philosophy h2 { color: var(--primary-blue); margin-bottom: 1.5rem; }
-        .philosophy p { max-width: 800px; margin: 0 auto; color: #555; font-size: 1.1rem; }
-
-        /* Course Cards */
-        .courses { padding: 60px 10%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--primary-blue); }
-        .card h3 { color: var(--primary-blue); }
-
-        /* Footer */
-        footer { background: var(--primary-blue); color: white; padding: 40px 10%; text-align: center; }
-        .line-btn { background: #06C755; color: white; padding: 12px 25px; border-radius: 30px; text-decoration: none; display: inline-block; margin-top: 20px; }
-    </style>
-</head>
-<body>
-
-<header>
-    <div class="logo">Excelsis English 劍橋卓越</div>
-    <nav>
-        <a href="#about">關於我們</a>
-        <a href="#courses">專業課程</a>
-        <a href="#contact">聯絡我們</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <h1>讓卓越成為習慣，從劍橋開始</h1>
-    <p>在愛的引導下，陪伴孩子自信走向國際舞台</p>
-</section>
-
-<section id="about" class="philosophy">
-    <h2>用廣大的愛心，成就孩子的未來</h2>
-    <p>
-        在劍橋卓越，我們深信每個孩子都是獨一無二的。我們的教育初衷很簡單：用愛心去影響生命。我們營造充滿包容與支持的環境，引導孩子在自信中探索英語，讓學習成為一場充滿喜悅的發現之旅。
+<section id="preschool" style="padding: 60px 10%; background: #fff;">
+    <h2 style="text-align: center; color: var(--primary-blue);">幼兒學前教育：在愛中成長</h2>
+    <p style="text-align: center; color: #666; max-width: 700px; margin: 0 auto 40px;">
+        我們參考國際教育標準，設計符合幼兒身心發展的主題課程，讓孩子在最無壓力的環境下愛上英語。
     </p>
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        <div class="card" style="flex: 1; min-width: 280px; text-align: center;">
+            <div style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px;"><i class="fas fa-seedling"></i></div>
+            <h3>萌芽階段 (PreK-1)</h3>
+            <p>重心於口說社交與手部開發，建立團體生活的歸屬感與安全感。</p>
+        </div>
+        <div class="card" style="flex: 1; min-width: 280px; text-align: center;">
+            <div style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px;"><i class="fas fa-leaf"></i></div>
+            <h3>探索階段 (PreK-2)</h3>
+            <p>透過科學實驗與繪本閱讀，擴展詞彙量並開始接觸字母發音。</p>
+        </div>
+        <div class="card" style="flex: 1; min-width: 280px; text-align: center;">
+            <div style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px;"><i class="fas fa-graduation-cap"></i></div>
+            <h3>卓越階段 (Kinder)</h3>
+            <p>銜接劍橋英檢標準，強化自然發音與基礎讀寫，建立自信表達力。</p>
+        </div>
+    </div>
 </section>
-
-<section id="courses" class="courses">
-    <div class="card">
-        <h3><i class="fas fa-child"></i> 幼兒啟蒙課程</h3>
-        <p>針對 4-6 歲，透過繪本與音律，在愛的氛圍中建立語感，讓孩子勇敢開口。</p>
-    </div>
-    <div class="card">
-        <h3><i class="fas fa-book-reader"></i> 劍橋兒童英檢</h3>
-        <p>對接國際 CEFR 標準，系統化提升聽說讀寫實力，穩健銜接國際認證。</p>
-    </div>
-    <div class="card">
-        <h3><i class="fas fa-star"></i> 全人素養教育</h3>
-        <p>不只是語言學習，更培養同理心與國際觀，成為溫暖且具競爭力的公民。</p>
-    </div>
-</section>
-
-<footer id="contact">
-    <h3>現在就開啟孩子的卓越之旅</h3>
-    <p>地址：[請填寫你的補習班地址]<br>電話：[請填寫你的聯絡電話]</p>
-    <a href="#" class="line-btn"><i class="fab fa-line"></i> 立即諮詢預約試聽</a>
-    <p style="margin-top: 20px; font-size: 0.8rem; opacity: 0.7;">© 2022 Excelsis English 劍橋卓越. All Rights Reserved.</p>
-</footer>
-
-</body>
-</html>
