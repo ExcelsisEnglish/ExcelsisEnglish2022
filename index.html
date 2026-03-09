@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excelsis English 劍橋卓越 | 8-10人精緻小班美語專家</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #003366;
+            --accent-gold: #D4AF37;
+            --warm-bg: #FDFBF7;
+            --soft-blue: #e7eff6;
+            --status-green: #28a745;
+            --status-orange: #f39c12;
+            --status-red: #e63946;
+        }
+
+        body { font-family: 'Noto Sans TC', sans-serif; margin: 0; background: var(--warm-bg); color: #333; line-height: 1.7; scroll-behavior: smooth; }
+        
+        /* 導覽列 */
+        header { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--primary-blue); font-weight: bold; }
+        nav a { margin-left: 20px; text-decoration: none; color: #333; font-weight: 500; transition: 0.3s; }
+        nav a.line-nav { background: #06C755; color: white; padding: 8px 18px; border-radius: 20px; margin-left: 25px; }
+
+        /* 小班制強調橫條 */
+        .highlight-bar { background: var(--accent-gold); color: white; text-align: center; padding: 12px; font-weight: bold; font-size: 1.1rem; }
+
+        /* 主視覺 */
+        .hero { height: 40vh; background: linear-gradient(rgba(0,51,102,0.6), rgba(0,51,102,0.6)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+
+        section { padding: 70px 10%; }
+        .section-title { text-align: center; color: var(--primary-blue); font-size: 2.2rem; margin-bottom: 40px; }
+
+        /* 幼兒三階段發展 (依據您的核心架構) */
+        .preschool-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .stage-card { background: white; padding: 35px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; border-top: 5px solid var(--accent-gold); }
+        .stage-card i { font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 20px; }
+        .stage-card h3 { color: var(--primary-blue); margin-bottom: 15px; }
+        .stage-highlight { font-weight: bold; color: #444; display: block; margin-bottom: 10px; }
+
+        /* 課表表格優化 */
+        .table-container { overflow-x: auto; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; background: white; min-width: 700px; }
+        th { background: var(--primary-blue); color: white; padding: 18px; }
+        td { padding: 15px; text-align: center; border-bottom: 1px solid #eee; }
+        .time-tag { background: #f0f4f8; padding: 2px 8px; border-radius: 4px; display: inline-block; margin: 2px; font-size: 0.9rem; color: var(--primary-blue); }
+        .new-tag { border: 1px solid var(--accent-gold); background: #fffdf5; }
+
+        /* 狀態標籤 */
+        .status { font-weight: bold; font-size: 0.9rem; }
+        .status-open { color: var(--status-green); }
+        .status-warn { color: var(--status-orange); }
+        .status-full { color: var(--status-red); }
+
+        footer { background: var(--primary-blue); color: white; padding: 60px 10%; text-align: center; }
+        .line-btn { background: #06C755; color: white; padding: 15px 35px; border-radius: 50px; text-decoration: none; display: inline-block; font-weight: bold; margin-top: 20px; transition: 0.3s; }
+        .line-btn:hover { transform: scale(1.05); }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            header { flex-direction: column; gap: 15px; }
+            nav a { margin: 0 8px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">EXCELSIS ENGLISH</div>
+    <nav>
+        <a href="#about">教育理念</a>
+        <a href="#preschool">幼兒分級</a>
+        <a href="#schedule">時段餘額</a>
+        <a href="https://line.me/ti/p/@你的ID" class="line-nav"><i class="fab fa-line"></i> LINE 諮詢</a>
+    </nav>
+</header>
+
+<div class="highlight-bar">
+    <i class="fas fa-users"></i> 堅持 8-10 人精緻小班制，確保每個孩子都獲得最完整的愛與關注
+</div>
+
+<section class="hero">
+    <h1>讓卓越成為習慣，從劍橋開始</h1>
+    <p>Professional Academy • Loving Environment • Global Standards</p>
+</section>
+
+<section id="about" style="text-align: center; background: white;">
+    <h2 class="section-title">卓越，源自於一份對生命的關懷</h2>
+    <p style="max-width: 850px; margin: 0 auto; color: #666; font-size: 1.1rem;">
+        我們深信每個孩子都是獨一無二的珍寶。透過 <b>8-10 人精緻小班制</b>，我們營造充滿愛與尊重的環境，引導孩子在自信中探索英語，讓學習成為一場充滿喜悅的發現之旅。
+    </p>
+</section>
+
+<section id="preschool" style="background: var(--soft-blue);">
+    <h2 class="section-title">幼兒全人發展計畫 (4-6歲)</h2>
+    <div class="preschool-grid">
+        <div class="stage-card">
+            <i class="fas fa-seedling"></i>
+            <h3>萌芽班 (PreK-1)</h3>
+            <span class="stage-highlight">「用溫暖建立安全感」</span>
+            <p style="font-size: 0.95rem; color: #666; text-align: left;">
+                專注口說溝通、社交技能與小肌肉發展。我們陪伴孩子學習分享與同理心，在快樂遊戲中自然開口。
+            </p>
+        </div>
+        <div class="stage-card">
+            <i class="fas fa-compass"></i>
+            <h3>探索班 (PreK-2)</h3>
+            <span class="stage-highlight">「引發孩子的好奇心」</span>
+            <p style="font-size: 0.95rem; color: #666; text-align: left;">
+                融入詞彙擴展、數學邏輯與科學實驗。透過自然與藝術主題，讓英語成為探索世界的工具。
+            </p>
+        </div>
+        <div class="stage-card">
+            <i class="fas fa-star"></i>
+            <h3>卓越班 (Kindergarten)</h3>
+            <span class="stage-highlight">「建立自信成就感」</span>
+            <p style="font-size: 0.95rem; color: #666; text-align: left;">
+                系統化自然發音 (Phonics) 與讀寫策略。結合劍橋 YLE 教材，為國小階段打下卓越基礎。
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="schedule">
+    <h2 class="section-title">2026 課程時段與招收狀態</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 30px;">
+        目前全校約剩 <span style="color: var(--status-red); font-weight: bold;">30%</span> 席位，建議預約程度測驗以利精準分班。
+    </p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>課程名稱</th>
+                    <th>CEFR 分級</th>
+                    <th>最新上課時段</th>
+                    <th>招收狀態</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>KET · PET</b></td>
+                    <td>A2</td>
+                    <td>週三 & 週五 16:10 - 18:10</td>
+                    <td><span class="status status-open">● 招生中</span></td>
+                </tr>
+                <tr style="background: #fafafa;">
+                    <td><b>Go Flyers</b></td>
+                    <td>A2</td>
+                    <td>
+                        <span class="time-tag">週一四 16:10-18:10</span>
+                        <span class="time-tag">週三五 16:10-18:10</span>
+                        <span class="time-tag">週六 09:30-12:30</span>
+                    </td>
+                    <td><span class="status status-warn">● 席位遞減</span></td>
+                </tr>
+                <tr>
+                    <td><b>Go Movers</b></td>
+                    <td>A1</td>
+                    <td>
+                        <span class="time-tag">週一四 16:10-18:10</span>
+                        <span class="time-tag">週三五 16:10-18:10</span><br>
+                        <span class="time-tag new-tag">週三 19:30-20:30 (加開)</span>
+                        <span class="time-tag new-tag">週六 09:30-11:30 (加開)</span>
+                    </td>
+                    <td><span class="status status-full">🔥 僅剩少量</span></td>
+                </tr>
+                <tr style="background: #fafafa;">
+                    <td><b>Go Starters</b></td>
+                    <td>Pre-A1</td>
+                    <td>週一四 13:00-15:00 或 16:10-18:10</td>
+                    <td><span class="status status-open">● 招生中</span></td>
+                </tr>
+                <tr>
+                    <td><b>Phonics 自然發音</b></td>
+                    <td>入門</td>
+                    <td>週一四 / 週三五 13:00-15:00</td>
+                    <td><span class="status status-open">● 招生中</span></td>
+                </tr>
+                <tr style="color: var(--accent-gold);">
+                    <td><b>Pre-K 幼兒 (4-6歲)</b></td>
+                    <td>適齡</td>
+                    <td>週二 16:30 - 18:00 (精緻小班)</td>
+                    <td><span class="status status-warn">● 預約測驗</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<footer>
+    <h2>與孩子一起開啟卓越之旅</h2>
+    <p>堅持 8-10 人精緻小班，給孩子最完整的愛與教育。</p>
+    <p style="font-size: 0.9rem; opacity: 0.8;">地址：[填寫您的地址] | 電話：[填寫您的電話]</p>
+    <a href="https://line.me/ti/p/@你的ID" class="line-btn"><i class="fab fa-line"></i> 立即 LINE 預約諮詢名額</a>
+    <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.5;">© 2022 Excelsis English 劍橋卓越. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
